@@ -37,6 +37,8 @@
         const now = Date.now() / 1000;
         const diff = Math.floor(targetDate - now);
 
+        document.getElementById("container").innerHTML = diff;
+
         if (diff > 0) {
           setTimeout(update, 1000);
         } else {
